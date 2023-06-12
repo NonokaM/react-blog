@@ -1,13 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import "./Navber.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse, faFilePen, faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const Navber = () => {
   return (
     <nav>
-        <Link to="/">Home</Link>
-        <Link to="/createpost">CreateBlog</Link>
-        <Link to="/login">Login</Link>
+        <Link to="/"><FontAwesomeIcon icon={faHouse} />Home</Link>
+        <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />CreateBlog</Link>
+        <Link to="/login"><FontAwesomeIcon icon={faArrowRightToBracket} />Login</Link>
     </nav>
   )
 }

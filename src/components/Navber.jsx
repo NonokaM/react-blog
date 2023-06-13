@@ -6,12 +6,16 @@ import { faHouse, faFilePen, faArrowRightToBracket } from '@fortawesome/free-sol
 
 
 
-const Navber = () => {
+const Navber = ({ isAuth }) => {
   return (
     <nav>
         <Link to="/"><FontAwesomeIcon icon={faHouse} />Home</Link>
         <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />CreateBlog</Link>
-        <Link to="/login"><FontAwesomeIcon icon={faArrowRightToBracket} />Login</Link>
+        {!isAuth ? (
+          <Link to="/login"><FontAwesomeIcon icon={faArrowRightToBracket} />Login</Link>
+        ) : (
+          <Link to="/logout"><FontAwesomeIcon icon={faArrowRightToBracket} />Logout</Link>
+        )};
     </nav>
   )
 }

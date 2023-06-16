@@ -1,11 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useState } from 'react';
+
 import Home from './components/Home';
 import CreatePost from './components/CreatePost';
 import Login from './components/Login';
 import Logout from './components/Logout';
 import Navbar from './components/Navber';
-import { useState } from 'react';
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);

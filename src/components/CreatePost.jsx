@@ -42,7 +42,7 @@ const CreatePost = () => {
             onChange={(e) => setPostText(e.target.value)}
           ></textarea>
         </div>
-        <button onClick={createPost}>投稿する</button>
+        <button className="postButton" onClick={createPost}>投稿する</button>
       </div>
     </div>
   )

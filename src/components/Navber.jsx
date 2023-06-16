@@ -15,7 +15,7 @@ const Navber = ({ isAuth }) => {
           <Link to="/login"><FontAwesomeIcon icon={faArrowRightToBracket} />Login</Link>
         ) : (
           <Link to="/logout"><FontAwesomeIcon icon={faArrowRightToBracket} />Logout</Link>
-        )};
+        )}
     </nav>
   )
 }

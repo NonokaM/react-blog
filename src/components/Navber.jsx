@@ -10,11 +10,13 @@ const Navber = ({ isAuth }) => {
   return (
     <nav>
         <Link to="/"><FontAwesomeIcon icon={faHouse} />Home</Link>
-        <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />CreateBlog</Link>
         {!isAuth ? (
           <Link to="/login"><FontAwesomeIcon icon={faArrowRightToBracket} />Login</Link>
         ) : (
-          <Link to="/logout"><FontAwesomeIcon icon={faArrowRightToBracket} />Logout</Link>
+          <>
+            <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />CreateBlog</Link>
+            <Link to="/logout"><FontAwesomeIcon icon={faArrowRightToBracket} />Logout</Link>
+          </>
         )}
     </nav>
   )

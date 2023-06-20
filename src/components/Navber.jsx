@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "./Navber.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faFilePen, faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faFilePen, faArrowRightToBracket, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -15,6 +15,7 @@ const Navber = ({ isAuth }) => {
         ) : (
           <>
             <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />CreateBlog</Link>
+            <Link to="/mypage"><FontAwesomeIcon icon={faUserAlt} />MyPage</Link>
             <Link to="/logout"><FontAwesomeIcon icon={faArrowRightToBracket} />Logout</Link>
           </>
         )}

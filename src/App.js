@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Logout from './components/Logout';
 import Navbar from './components/Navber';
 import Mypage from './components/Mypage';
+import EditMyPage from './components/EditMyPage';
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />}></Route>
         <Route path="/mypage" element={<Mypage />}></Route>
+        <Route path="/editmypage" element={<EditMyPage />}></Route>
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />}></Route>
         <Route path="/logout" element={<Logout setIsAuth={setIsAuth} />}></Route>
       </Routes>

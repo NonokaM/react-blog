@@ -9,7 +9,10 @@ export default function Mypage() {
       <Link to="/editmypage" className="editMyPageButton">プロフィールを編集 </Link>
       <img className="icon" src="https://placehold.jp/150x150.png" />
       <h1>{auth.currentUser.displayName}</h1>
-      <p>aaaaaaaaaaa</p>
+      <a href="">Twitter</a>
+      <a href="">Github</a>
+      <p>コメントコメントコメントコメント</p>
+      <p>過去の投稿</p>
     </div>
   )
 }
